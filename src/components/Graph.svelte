@@ -158,7 +158,7 @@
 </script>
 
 <h1>Where has <b>{country}</b> been getting its electricity from in the 21st century?</h1>
-<svg width={chartWidth} height={chartHeight}>
+<svg width={chartWidth} height={chartHeight} style="position:relative; left: 200px">
     <g>
         <path
             d = {area1(subset)}
@@ -273,24 +273,24 @@
 		{/if} -->
 </div>
 
-<h2 style="position:relative; right: 500px; bottom:850px; font-size: 20px">
+<h2 style="position:relative; right: 300px; bottom:850px; font-size: 20px">
     <u><b>Documentation</b></u>
 </h2>
 
-<p style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%">
+<p style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%">
     We chose to use the colors we used to distinguish between renewable and nonrenewable sources of energy. We used different shades of green to represent the different types of renewable sources because the color green stimulates imagery pertaining to environmentalism. Furthermore, we used different shades of red to represent the non-renewable sources because red has a bad connotation, and in today’s age non-renewable sources of energy are seen as the enemies.
 </p>
-<p style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%">
+<p style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%">
 We chose this form of plot because it allows us to clearly see a historic trend in the different categories. More specifically, though, these stacked sections allow us to juxtapose the relative changes in dependency of a country on renewable and non-renewable sources of energy.
 </p>
-<p style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%">
+<p style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%">
 The 2 interactivities we chose are the tooltips for recognizing what each section of the plot represents and the drop-down menu to select a country/region to focus on. The tooltip is powerful because it allows us to prevent too much textual clutter on the webpage. In this way, the user can look at the plot and hover over a section if they get curious as to what the specific region on the plot represents. Additionally, the drop-down menu allows users to compare the trends of different countries/regions.
 </p>
-<p style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%">
+<p style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%">
 Our other ideas for creating interactivity were to add more information to the tooltip and create a selection menu for users to be able to focus on specific sources of energy rather than have them all on the screen. These turned out to be more complicated than we anticipated, so we decided to go with this simplistic design.
 </p>
-<h3 style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%"><b>Development Process:</b></h3>
-<p style="position:relative; right: 500px; bottom:850px; font-size: 15px; width: 120%">
+<h3 style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%"><b>Development Process:</b></h3>
+<p style="position:relative; right: 300px; bottom:850px; font-size: 15px; width: 120%">
 We are a team of 2, so we tried our best to split the work evenly. We, firstly, created a GitHub page to collaborate on the project remotely. Then, we split the work so that one of us created the static visualization (Saathvik) and the other worked on the interactivity (Tyler). In our case, this worked out perfectly because we both had schedules that did not quite align. So, only once the static visualization was complete, the interactive components were added. This also allowed us to prevent any situations where we both had different updates to the code and so failed to merge changes. Towards the end of the project, we both sat together and hashed out any bugs. We also attended office hours to get some advice on creating tooltips. In total, we probably spent about 10 people-hours on the project. Creating the static visualization was pretty straightforward. Even the tooltips and the drop-down menu were pretty speedily finished with the help of TAs and the Professor. However, we ran into some bugs in the reactive portion of the Svelte file and also spent a lot more time than we expected on styling the page. 
 </p>
 
@@ -308,7 +308,7 @@ We are a team of 2, so we tried our best to split the work evenly. We, firstly, 
     h1 {
         width: 200%;
         position: relative;
-        left: 0px;
+        left: 200px;
         bottom: 0px;
         height: 0em;
         font-size: 25px;
@@ -321,7 +321,7 @@ We are a team of 2, so we tried our best to split the work evenly. We, firstly, 
         font-size: 20px;
         position: relative;
         bottom: 700px;
-        left: 740px
+        left: 940px
     }
 
 
@@ -331,7 +331,7 @@ We are a team of 2, so we tried our best to split the work evenly. We, firstly, 
         text-align: center;
         position: relative;
         bottom: 700px;
-        left: 740px;
+        left: 940px;
         width: 200px;
         height: 35px;
     }
